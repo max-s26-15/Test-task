@@ -1,0 +1,22 @@
+.index-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    height: 100vh;
+    width: 100vw;
+}
+
+a, .link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.actions {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}

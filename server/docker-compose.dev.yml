@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  database:
+    container_name: database
+    image: mysql:8.0.0
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+    network_mode: host
+    environment:
+      MYSQL_USER: ${DB_USER}
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+      MYSQL_DATABASE: ${DATABASE}
+      MYSQL_PASSWORD: ${PASSWORD}
+    volumes:
+      - data:/var/lib/mysql
+
+volumes:
+  data:
